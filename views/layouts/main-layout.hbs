@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ pageTitle }}</title>
+    <link href='/css/main.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    {{#if leaderBoardCSS}}
+    <link href='/css/leaderBoardCSS.css' rel='stylesheet' />
+    {{/if}}
+    {{#if startGameCSS}}
+    <link href='/css/startGame.css' rel='stylesheet' />
+    {{/if}}
+    {{#if gameBoardCSS}}
+    <link href='/css/gameBoard.css' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet' />
+    {{/if}}
+    {{#if summaryCSS}}
+    <link href='/css/summary.css' rel='stylesheet' />
+    {{/if}}
+
+
+</head>
+
+<body>
+    {{{ body }}}
+</body>
+
+</html>

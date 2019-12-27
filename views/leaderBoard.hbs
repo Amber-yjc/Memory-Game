@@ -1,0 +1,36 @@
+<div id='leader-board-container'>
+    <h1>LeaderBoard</h1>
+
+    <h2>Your score:</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Tiles</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>{{thisName}}</td>
+            <td>{{thisTiles}}</td>
+            <td>{{thisScore}}</td>
+        </tr>
+    </table>
+    <h2>Top 5 players:</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Tiles</th>
+            <th>Score</th>
+        </tr>
+        {{#each user}}
+        <tr>
+            <td>{{this.userName}}</td>
+            <td>{{this.tiles}}</td>
+            <td>{{this.score}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    <form action="/gameBoard">
+        <input type="submit" value="Restart" />
+    </form>
+
+</div>
